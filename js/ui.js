@@ -1,7 +1,7 @@
 /* оболочка: тема, хедер, меню, появление, часы, прожектор, cmd+k */
 import {
   $, $$, h, clamp, feed, beat, onTick, addCommand, commands,
-  WEEKDAYS, MONTHS, days, plural, pad2
+  WEEKDAYS, MONTHS, days, pad2
 } from './util.js';
 
 const root = document.documentElement;

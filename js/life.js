@@ -1,7 +1,7 @@
 /* жизнь: привычки, режим, деньги, записки */
 import { HABITS, ROUTINE, MONEY_CATS, SPENDS_SEED, NOTES_SEED, ME } from './data.js';
 import {
-  $, $$, h, get, set, uid, rub, mins, nowMins, dayKey, addDays, days, plural,
+  $, $$, h, get, set, uid, rub, mins, nowMins, dayKey, addDays, plural,
   toast, feed, onTick, addCommand, clamp, WEEK_SHORT
 } from './util.js';
 

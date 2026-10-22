@@ -15,6 +15,11 @@ function weight() {
 }
 
 export function initAbout() {
+  const me = $('#me-line');
+  if (me) me.textContent = `личная панель · ${ME.city} · ${ME.klass}`;
+  const who = $('#foot-who');
+  if (who) who.textContent = `${ME.name}, ${ME.city} · собрано руками за вечер`;
+
   const links = $('#link-list');
   LINKS.forEach(([label, value, href]) => {
     const a = h('a', 'link', `<b>${label}</b><span>${value}</span>`);
