@@ -221,7 +221,7 @@ function initEvents() {
     .slice(0, 5);
 
   items.forEach((e, i) => {
-    const d = new Date(e.date);
+    const d = new Date(e.date + 'T00:00:00');
     const li = h('li', 'event' + (e.left <= 14 ? ' event--big' : ''));
     li.innerHTML =
       `<span class="event__d">${e.left <= 0 ? '0' : e.left}<em>${e.left <= 0 ? 'сегодня' : days(e.left, ['день', 'дня', 'дней']).split(' ')[1]}</em></span>
